@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>New York City Community Land Trusts</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="sidebar">
+        <div class="header">
+            <h1>New York City Community Land Trusts</h1>
+        </div>
+        <p>Community Land Trusts (CLT) are becoming an increasingly valuable tool for communities in New York to
+            participate in community-centered land acquisition. CLTs are a way for communities to prevent displacement
+            and ensure long-term housing affordability. </p>
+        <p>This map locates where current CLTs are in New York City and their land acquisition status. This map builds
+            upon Pratt Center for Community Development's static map by adding interactive components. </p>
+        <p><strong>Click a marker for details</strong></p>
+        <div class="legend">
+            <div>
+                <span class="legend-key" style="background-color: #C95D63;"></span>
+                <span>Advocating for Land</span>
+            </div>
+            <div>
+                <span class="legend-key" style="background-color: #AE8799;"></span>
+                <span>Land Transfer in Progress</span>
+            </div>
+            <div>
+                <span class="legend-key" style="background-color: #717EC3;"></span>
+                <span>Has Land</span>
+            </div>
+        </div>
+        <a class="source-code-link" href="https://github.com/chriswhong/pizza-map-2024">Source Code</a>
+    </div>
+    <div id="map-container"></div>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js"></script>
+    <script src="js/pizza-data.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
