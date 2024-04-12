@@ -5,8 +5,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic2FyYWhoYWhtYWQiLCJhIjoiY2x1bHU0NDdxMDBtcTJqb
 var mapOptions = {
     container: 'map-container', // container ID
     style: 'mapbox://styles/mapbox/dark-v11', // dark basemap
-    center: [-74.05, 40.68], // starting position [lng, lat]
-    zoom: 10.4, // starting zoom,
+    center: [-73.99661, 40.73445], // starting position [lng, lat]
+    zoom: 9.9, // starting zoom,
 }
 
 // instantiate the map
@@ -21,14 +21,14 @@ cltData.forEach(function (cltRecord) {
 
     var color
 
-    // use if statements to assign colors based on cltData.program
-    if (cltRecord.program === 'Advocating for Land') {
+    // use if statements to assign colors based on cltData.landstatus
+    if (cltRecord.landstatus === 'Advocating for Land') {
         color = '#C95D63'
     }
-    if (cltRecord.program === 'Land Transfer in Progress') {
+    if (cltRecord.landstatus === 'Land Transfer in Process') {
         color = '#AE8799'
     }
-    if (cltRecord.program === 'Has Land') {
+    if (cltRecord.landstatus === 'Has Land') {
         color = '#717EC3'
     }
     
